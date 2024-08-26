@@ -12,7 +12,11 @@ const staticRoute = require("./routes/staticRouter");
 const userRoute = require("./routes/user");
 
 const app = express();
+<<<<<<< HEAD
 const PORT = process.env.PORT;
+=======
+const PORT = process.env.PORT || 8001;
+>>>>>>> 6db42d394e04b05637fe48f7e87ccef5a92a3902
 
 connectToMongoDB(process.env.MONGODB || "")
   .then(() => console.log("Mongodb connected"))
